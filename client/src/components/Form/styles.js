@@ -10,5 +10,12 @@ export default makeStyles(() => ({
         alignItems: 'center',
         backgroundColor: '#efefef'
     },
-    
+    heading: {
+        color: '#55133B',
+        fontWeight: '400',
+        textTtranform: 'lowerCase',
+    },
+    image: {
+        marginLeft: '15px',
+    },
 }))
