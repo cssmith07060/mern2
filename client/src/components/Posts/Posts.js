@@ -3,7 +3,7 @@ import Post from './Post/Post'
 
 
 const Posts = () => {
-    const classes = usestyles()
+    const classes = useStyles()
 
     return (
         <>
