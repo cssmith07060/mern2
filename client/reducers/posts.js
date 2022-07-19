@@ -1,7 +1,10 @@
-import { combineReducers } from "redux";
-
-import posts from "./posts"
-
-export default combineReducers({
-    posts,
-})
+const reducer = (posts=[], action) => {
+    switch (action.type) {
+        case "FETCH_ALL":
+            return posts;
+        case "CREATE":
+            return posts;
+        default:
+            break;
+    }
+}
