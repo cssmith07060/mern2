@@ -5,7 +5,7 @@ import usestyles from './styles'
 import (TextField, Button, Typography, Paper) from '@material-ui/core'
 
 const Form = () => {
-    const[postData, setPostData] = setState({ creator:'', title:'', message:'', tags:'', selectedFile:''})
+    const[postData, setPostData] = useState({ creator:'', title:'', message:'', tags:'', selectedFile:''})
      const classes = usestyles()
     
     const handleSubmit = () => {
@@ -18,7 +18,7 @@ const Form = () => {
         <form autoComplete='off' noValidate className={classes.form}></form>
         <Typography variant="h6">Creating a Post</Typography>  
         <TextField name="creator" variant="outlined"
-            label="creator" fullWidth="" value={postData.creator} onChange={(e)=> setPostData({creator: e.currentTarget.value})}/>
+            label="creator" fullWidth="" value={postData.creator} onChange={(e)=> setPostData({...postData, creator: e.currentTarget.value})}/>
     </Paper>
     );
 }
