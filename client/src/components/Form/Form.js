@@ -17,8 +17,14 @@ const Form = () => {
     return (<Paper className={classes.paper}>
         <form autoComplete='off' noValidate className={classes.form}></form>
         <Typography variant="h6">Creating a Post</Typography>  
-        <TextField name="creator" variant="outlined"
-            label="creator" fullWidth="" value={postData.creator} onChange={(e)=> setPostData({...postData, creator: e.currentTarget.value})}/>
+        <TextField name="creator" variant="outlined" label="Creator" fullWidth="" value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.currentTarget.value })} />
+
+        <TextField name="title" variant="outlined" label="Creator" fullWidth="" value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.currentTarget.value })} />
+        
+        <TextField name="message" variant="outlined" label="Creator" fullWidth="" value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.currentTarget.value })} />
+        
+        <TextField name="creator" variant="outlined"label="Creator" fullWidth="" value={postData.creator} onChange={(e)=> setPostData({...postData, creator: e.currentTarget.value})}/>
+        
     </Paper>
     );
 }
